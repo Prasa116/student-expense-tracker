@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@keyframes gradient-bg {
+  0% {
+    background-color: #0A0A0C;
+    background-image: radial-gradient(at 10% 20%, rgba(16, 185, 129, 0.04) 0px, transparent 60%),
+                      radial-gradient(at 80% 10%, rgba(59, 130, 246, 0.02) 0px, transparent 50%),
+                      radial-gradient(at 90% 80%, rgba(139, 92, 246, 0.03) 0px, transparent 60%);
+  }
+  50% {
+    background-color: #060B09;
+    background-image: radial-gradient(at 20% 80%, rgba(16, 185, 129, 0.02) 0px, transparent 50%),
+                      radial-gradient(at 50% 20%, rgba(59, 130, 246, 0.04) 0px, transparent 60%),
+                      radial-gradient(at 80% 90%, rgba(139, 92, 246, 0.02) 0px, transparent 50%);
+  }
+  100% {
+    background-color: #0B070E;
+    background-image: radial-gradient(at 80% 20%, rgba(16, 185, 129, 0.03) 0px, transparent 50%),
+                      radial-gradient(at 10% 10%, rgba(59, 130, 246, 0.02) 0px, transparent 55%),
+                      radial-gradient(at 30% 90%, rgba(139, 92, 246, 0.05) 0px, transparent 60%);
+  }
+}
+
+.ambient-animated-bg {
+  animation: gradient-bg 18s ease-in-out infinite alternate;
+  background-attachment: fixed;
+}
+

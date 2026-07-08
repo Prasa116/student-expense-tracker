@@ -1,0 +1,6 @@
+{
+  "name": "Python Student Expense CLI",
+  "description": "An interactive command line interface (CLI) sandbox and dashboard simulator for tracking college student expenses, budgets, and spending categories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
